@@ -1,0 +1,236 @@
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 1.2rem;
+  color: var(--text);
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.itemCard {
+  display: flex;
+  gap: 1rem;
+
+  padding: 1rem;
+  border-radius: 12px;
+
+  background: rgba(var(--card-rgb), 0.9);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(10px);
+
+  transition: 0.25s ease;
+}
+
+.itemCard:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.thumb {
+  width: 110px;
+  height: 110px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.info {
+  flex: 1;
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemHeader h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.removeSmall {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+.removeSmall:hover {
+  opacity: 1;
+}
+
+.price {
+  font-size: 1.1rem;
+  margin-top: 0.3rem;
+  color: var(--accent);
+}
+
+.qtyControls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.7rem;
+}
+
+.qtyBtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.qtyBtn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.qtyInput {
+  width: 50px;
+  padding: 0.3rem;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text);
+}
+
+.subtotal {
+  margin-top: 0.7rem;
+  font-weight: 600;
+}
+
+.removeBtn {
+  margin-top: 0.7rem;
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.removeBtn:hover {
+  background: #c64642;
+}
+
+.summaryCard {
+  position: sticky;
+  top: 100px;
+
+  padding: 1.5rem;
+  background: rgba(var(--card-rgb), 0.9);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-md);
+}
+
+.summaryCard h3 {
+  margin-bottom: 1rem;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.6rem 0;
+  font-size: 1rem;
+}
+
+.checkoutBtn {
+  display: block;
+  margin-top: 1.2rem;
+  padding: 0.85rem 1rem;
+
+  border-radius: 10px;
+  background: var(--accent);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 1.05rem;
+  font-weight: 600;
+
+  transition: 0.25s ease;
+}
+
+.checkoutBtn:hover {
+  background: var(--accent-hover);
+  box-shadow: 0 6px 16px rgba(var(--accent-rgb), 0.35);
+}
+
+.emptyBox {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 16px;
+  background: rgba(var(--card-rgb), 0.8);
+  border: 1px solid var(--border);
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 14px;
+  width: 320px;
+  text-align: center;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+
+.modalActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.modalRemove {
+  background: #d9534f;
+  border: none;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modalCancel {
+  background: var(--border);
+  color: var(--text);
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}

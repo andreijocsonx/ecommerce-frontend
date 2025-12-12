@@ -1,0 +1,68 @@
+.wrapper {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  color: var(--text);
+}
+
+.card {
+  background: rgba(var(--card-rgb), 0.9);
+  border: 1px solid var(--border);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  animation: fadeIn 0.5s ease;
+  max-width: 400px;
+}
+
+.icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: pop 0.5s ease;
+  box-shadow: 0 6px 16px rgba(var(--accent-rgb), 0.35);
+}
+
+.card h1 {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+}
+
+.card p {
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.4rem;
+  background: var(--accent);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--accent-hover);
+  box-shadow: 0 6px 16px rgba(var(--accent-rgb), 0.35);
+}
+

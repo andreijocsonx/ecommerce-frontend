@@ -1,0 +1,81 @@
+.container {
+  padding: 2rem 1.5rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.input, .select {
+  padding: 0.75rem;
+  font-size: 1rem;
+  min-width: 180px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  box-shadow: var(--shadow-sm);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.6rem;
+  padding: 1rem;
+}
+
+.noResults {
+  text-align: center;
+  padding: 3rem 1rem;
+  font-size: 1.3rem;
+  opacity: 0.7;
+}
+
+.pagination {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageBtn {
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.pageBtn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.pageBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.currentPage {
+  padding: 0.4rem 0.8rem;
+  background: black;
+  color: white;
+  border-radius: 4px;
+}
+
+.loading {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.animation {
+  height: 300px;
+  background: rgba(var(--card-rgb), 0.3);
+  border-radius: 12px;
+  animation: pulse 1.5s infinite;
+}

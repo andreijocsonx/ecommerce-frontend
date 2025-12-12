@@ -1,0 +1,114 @@
+.pageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: calc(100vh - 80px);
+  padding: 2rem;
+
+  background: var(--bg);
+  color: var(--text);
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+
+  background: rgba(var(--card-rgb), 0.85);
+  backdrop-filter: blur(14px) saturate(160%);
+
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  padding: 2rem 2.2rem;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+
+  animation: rise 0.4s ease forwards;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title {
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  opacity: 0.7;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form input {
+  padding: 0.75rem 1rem;
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  background: var(--card-bg);
+  color: var(--text);
+
+  font-size: 0.95rem;
+
+  transition: 0.2s ease;
+}
+
+.form input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.25);
+  outline: none;
+}
+
+.btnPrimary {
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: none;
+
+  background: var(--accent);
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btnPrimary:hover {
+  background: var(--accent-hover);
+  box-shadow: 0 6px 16px rgba(var(--accent-rgb), 0.35);
+}
+
+.link {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: var(--text);
+  opacity: 0.8;
+}
+
+.link span {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.link:hover span {
+  text-decoration: underline;
+}
